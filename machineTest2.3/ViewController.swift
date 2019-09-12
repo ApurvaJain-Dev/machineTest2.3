@@ -14,7 +14,7 @@ struct Flower {
     var images : String
 }
 
-class ViewController: UIViewController, UITableViewDataSource {
+class ViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
     @IBOutlet weak var tableViewFlower: UITableView!
     
@@ -37,11 +37,27 @@ class ViewController: UIViewController, UITableViewDataSource {
         return cell
     }
     
-
+    func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+        let headerView = tableView.dequeueReusableHeaderFooterView(withIdentifier: "headerFlower") as! FlowerHeaderrView
+        headerView.labelHeader.text = "Beautiful Flowers"
+        
+        return headerView
+    }
+    
+    func tableView(_ tableView: UITableView, viewForFooterInSection section: Int) -> UIView? {
+        let footerView = tableView.dequeueReusableHeaderFooterView(withIdentifier: "headerFlower") as! FlowerHeaderrView
+        footerView.labelHeader.text = "End of Flowers"
+        return footerView
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         let flowerCell = UINib(nibName: "FlowerTableViewCell", bundle: nil)
         self.tableViewFlower.register(flowerCell, forCellReuseIdentifier: "cell")
+        
+        
+        let flowerHeader = UINib(nibName: "FlowerHeaderView", bundle: nil)
+        self.tableViewFlower.register(flowerHeader, forHeaderFooterViewReuseIdentifier: "headerFlower")
         // Do any additional setup after loading the view, typically from a nib.
     }
 

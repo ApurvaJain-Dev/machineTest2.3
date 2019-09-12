@@ -15,6 +15,8 @@
 		68849EF8232AB80900F60477 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 68849EF6232AB80900F60477 /* LaunchScreen.storyboard */; };
 		68849F02232AB8B100F60477 /* FlowerTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68849F00232AB8B100F60477 /* FlowerTableViewCell.swift */; };
 		68849F03232AB8B100F60477 /* FlowerTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 68849F01232AB8B100F60477 /* FlowerTableViewCell.xib */; };
+		68849F05232AC47400F60477 /* FlowerHeaderrView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68849F04232AC47400F60477 /* FlowerHeaderrView.swift */; };
+		68849F07232AC48D00F60477 /* FlowerHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 68849F06232AC48D00F60477 /* FlowerHeaderView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +30,8 @@
 		68849EF9232AB80900F60477 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		68849F00232AB8B100F60477 /* FlowerTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlowerTableViewCell.swift; sourceTree = "<group>"; };
 		68849F01232AB8B100F60477 /* FlowerTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FlowerTableViewCell.xib; sourceTree = "<group>"; };
+		68849F04232AC47400F60477 /* FlowerHeaderrView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlowerHeaderrView.swift; sourceTree = "<group>"; };
+		68849F06232AC48D00F60477 /* FlowerHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FlowerHeaderView.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +81,8 @@
 			children = (
 				68849F00232AB8B100F60477 /* FlowerTableViewCell.swift */,
 				68849F01232AB8B100F60477 /* FlowerTableViewCell.xib */,
+				68849F04232AC47400F60477 /* FlowerHeaderrView.swift */,
+				68849F06232AC48D00F60477 /* FlowerHeaderView.xib */,
 			);
 			path = flowerCell;
 			sourceTree = "<group>";
@@ -139,6 +145,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				68849F07232AC48D00F60477 /* FlowerHeaderView.xib in Resources */,
 				68849EF8232AB80900F60477 /* LaunchScreen.storyboard in Resources */,
 				68849EF5232AB80900F60477 /* Assets.xcassets in Resources */,
 				68849F03232AB8B100F60477 /* FlowerTableViewCell.xib in Resources */,
@@ -156,6 +163,7 @@
 				68849EED232AB7FF00F60477 /* ViewController.swift in Sources */,
 				68849EEB232AB7FF00F60477 /* AppDelegate.swift in Sources */,
 				68849F02232AB8B100F60477 /* FlowerTableViewCell.swift in Sources */,
+				68849F05232AC47400F60477 /* FlowerHeaderrView.swift in Sources */,
 				68849EF3232AB7FF00F60477 /* machineTest2_3.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
